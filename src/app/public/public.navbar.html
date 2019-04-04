@@ -1,0 +1,17 @@
+ <!-- <div class="mat-app-background basic-container">
+<mat-tab-group >
+        <mat-tab label="Register" ngRouterLink='/register'></mat-tab>
+        <mat-tab label="Signup" ngRouterLink='/signup'></mat-tab>
+    </mat-tab-group>
+  </div> -->
+  <nav mat-tab-nav-bar> 
+    <a mat-tab-link
+    *ngFor="let link of navLinks"
+    [routerLink]="link.link"
+    routerLinkActive #rla="routerLinkActive"
+    [active]="rla.isActive">
+    
+    </a>
+    </nav>
+    <router-outlet></router-outlet>
+  

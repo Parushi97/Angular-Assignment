@@ -1,0 +1,29 @@
+
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Bookings</a>
+    
+      <!-- Links -->
+      <ul class="navbar-nav" style="padding-left: 80%">
+        
+    
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              {{Name}}<img src="http://www.clker.com/cliparts/b/1/f/a/1195445301811339265dagobert83_female_user_icon.svg.med.png" width="20px" height="20px">
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" >{{Name}}</a>
+              <a class="dropdown-item" (click)=mybookings()><i class="fa fa-edit"></i>  My Bookings </a>
+              <a class="dropdown-item" (click)=faq()><i class="fa fa-envelope"> FAQs</i> </a>
+              <a class="dropdown-item" (click)=logout()><i class="fa fa-car">  Log Out</i></a>
+              <div class="dropdown-divider"></div>
+              
+            </div>
+          
+        </li>
+      </ul>
+    </nav>
+    <h3><p class="dynamicHeader"  color="green">{{header}} </p></h3>
+  <router-outlet></router-outlet>

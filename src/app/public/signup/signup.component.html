@@ -1,0 +1,32 @@
+<style>
+
+  
+  </style>
+  
+
+
+  <form [formGroup]="profileForm1">
+  <div class="container">
+    <h1>Sign In</h1>
+    <hr>
+    <div>
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" formControlName="email" name="email">
+    <div class="alert" *ngIf="!profileForm1.controls['email'].valid && profileForm1.controls['email'].touched">{{alert}}</div>
+		
+		</div>
+    
+    <div>  
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" formControlName="password" placeholder="Enter Password" name="password">
+    <div class="alert" *ngIf="!profileForm1.controls['password'].valid && profileForm1.controls['password'].touched">{{alert}}</div>
+		
+  </div>
+		
+     
+    <hr>
+  <button type="submit" class="registerbtn" (click)='saveas()'>login</button>
+
+  </div>
+</form>
+

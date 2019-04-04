@@ -1,0 +1,88 @@
+
+
+<!-- <div class="mat-app-background basic-container">
+    <mat-tab-group >
+            <mat-tab label="Current Booking"button   (click)='currentflag()'> 
+                <div *ngIf=cflag>
+                    <ul *ngFor="let item1 of detailcurrent">
+                      <div>
+                  {{item1.current}}
+                      </div>
+              </ul>
+              </div>
+             </mat-tab>
+            <mat-tab label="Upcomig" button   (click)='currentflag()' >
+                <div *ngIf=pflag>
+                    <ul *ngFor="let item2 of detailpast">
+                      <div>
+                       {{item2.p1}}
+                       
+                       </div>
+                    </ul> 
+                    </div>
+            </mat-tab>
+        </mat-tab-group>
+      </div> -->
+<!-- 
+ <div class="flex-container">
+<div class="colm-1"> 
+    <button   (click)='currentflag()' class="registerbtn" >Current Booking</button>
+    <div *ngIf=cflag>
+        <ul *ngFor="let item1 of detailcurrent">
+          <div class="box">
+      {{item1.current}}
+          </div>
+  </ul>
+  </div>
+</div> 
+
+
+  <div class="colm-2"> 
+    <button  (click)='showpast()'class="registerbtn">Upcoming Booking</button>
+  <div *ngIf=pflag>
+    
+ <ul *ngFor="let item2 of detailpast">
+    <div class="box">
+   <div>
+     {{item2.p1}}
+    </div>
+  </div>
+ </ul> 
+ </div>
+ </div>
+ </div>  -->
+
+<div class=container>
+<button class="btn success" (click)=currentflag()>UPCOMING </button> 
+
+<button class="btn success" (click)=showpast()>PAST</button> 
+<br> 
+<!-- {{mybooking | json}} --> 
+<!-- <div *ngFor="let book of mybooking"> 
+<p>{{book | json}}</p> --> 
+
+<!-- </div> --> 
+<div class="box"> 
+<div class="data" *ngIf="cflag"> 
+
+<ul *ngFor="let book of detailcurrent"> 
+<li id="date">{{book.date}}<span id="s">{{book.status}}</span></li> 
+<li id="name">{{book.name}}</li> 
+<li id="add">{{book.address}}</li> 
+</ul> 
+
+</div> 
+</div> 
+
+<div class="box"> 
+<div class="data" *ngIf="pflag"> 
+<ul *ngFor="let past of detailpast"> 
+<li id="date">{{past.date}}<span id="s"[ngStyle]="{'color':book.status === 'pending' ? 'blue': 'green'}">{{past.status}}</span></li> 
+<li id="name">{{past.name}}</li> 
+<li id="add">{{past.address}}</li> 
+</ul> 
+
+</div> 
+</div>
+</div>
+ 
