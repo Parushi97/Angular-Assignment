@@ -1,29 +1,25 @@
-h3{
+* {
+	box-sizing: border-box;
+	
+}
+h2{
+  margin: 0px;
   text-align: center;
   color: green;
 }
-
-
-
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
 }
 
-* {
-	box-sizing: border-box;
-	
-}
-
-/* Add padding to containers */
+ /* Add padding to containers */ 
 .container {
   position: absolute; 
   left:30%; 
   top:55px;
-  width: 500px;
-   height:900px; 
-
+  width: 450px;
+  height:550px; 
   border: 2px grey;
   padding: 10px;
   box-shadow: 5px 10px 10px 10px #888888;
@@ -32,18 +28,36 @@ body {
 /* Full-width input fields */
 input[type=text], input[type=password],input[type=number] {
   width:75%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+  height:15%;
+  padding:10px;
+  margin:5px;
   display: inline-block;
-  border: none;
-  background: #f1f1f1;
+  border: solid 	gainsboro;
+  border-width: 1px;
+  
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
-
+.alertmessage{
+  color: red;
+  margin:1px;
+  font-size:8px;
+}
+.signup{
+  margin-top:-20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 /* Overwrite default styles of hr */
 hr {
   border: 1px solid #f1f1f1;
@@ -54,7 +68,7 @@ hr {
 .registerbtn {
   background-color: #4CAF50;
   color: white;
-  padding: 13px 20px;
+  padding: 10px 15px;
   margin: 8px 0;
   border: none;
   cursor: pointer;

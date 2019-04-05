@@ -1,41 +1,43 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <form [formGroup]="profileForm" (ngSubmit)="onsubmit(profileForm.value)" >
   <div class="container">
-    <h3 >Register</h3>
+    <h2 >Register</h2>
     <hr>
     <div class="flex-container">
     <div class= "colm-1">
 		
 		<label for="fname"><b>First Name</b>
 		<input type="text" formControlName="firstName" value="firstName">
-		<div class="alert" *ngIf="!profileForm.controls['firstName'].valid && profileForm.controls['firstName'].touched">{{alert}}</div>
+		<div class="alertmessage" *ngIf="!profileForm.controls['firstName'].valid && profileForm.controls['firstName'].touched">{{alert}}</div>
     </label>
     
     <br>
     <label for="lname"><b>Last name</b>	
     <input type="text" formControlName="lName"  name="lname" >
-		<div class="alert" *ngIf="!profileForm.controls['lName'].valid && profileForm.controls['lName'].touched">{{alert}}</div>
+		<div class="alertmessage" *ngIf="!profileForm.controls['lName'].valid && profileForm.controls['lName'].touched">{{alert}}</div>
   </label>
 		<br>
 		<label for="email"><b>Email</b>
 		<input type="text" formControlName="email" placeholder="Enter Email" name="email">
-		<div class="alert" *ngIf="!profileForm.controls['email'].valid && profileForm.controls['email'].touched">{{alert}}</div>
+		<div class="alertmessage" *ngIf="!profileForm.controls['email'].valid && profileForm.controls['email'].touched">{{alert}}</div>
   </label>
     <br>
     <label for="psw"><b>Password</b>
     <input type="password" formControlName="password" placeholder="Enter Password" name="password">
-		<div class="alert" *ngIf="!profileForm.controls['password'].valid && profileForm.controls['password'].touched">{{alert}}</div>
+		<div class="alertmessage" *ngIf="!profileForm.controls['password'].valid && profileForm.controls['password'].touched">{{alert}}</div>
   </label>
 		</div>
     
  	 <div class="colm-2">
     <label for="address"><b>Address</b>
     <input type="text" formControlName="address" name="address" >
-    <div class="alert" *ngIf="!profileForm.controls['address'].valid && profileForm.controls['address'].touched">{{alert}}</div>
+    <div class="alertmessage" *ngIf="!profileForm.controls['address'].valid && profileForm.controls['address'].touched">{{alert}}</div>
   </label>
 		<br>
     <label for="pno"><b>Contact</b>
-    <input type="number" formControlName="pno" name="pno" >
-    <div class="alert" *ngIf="!profileForm.controls['pno'].valid && profileForm.controls['pno'].touched">{{alert}}</div>
+    <input type="number" formControlName="pno" name="pno" min="10" >
+    <div class="alertmessage" *ngIf="!profileForm.controls['pno'].valid && profileForm.controls['pno'].touched">{{alert}}</div>
   </label>
     <br>
     <label for="med"><b>Medical-History</b>
@@ -44,17 +46,18 @@
 		<br>
     <label for="psw-repeat"><b>Repeat Password</b>
     <input type="password" formControlName="repeatpassword" placeholder="Repeat Password" name="repeatpassword" appConfirmPasswordValidator='password' required >
-    <div *ngIf="profileForm.get('repeatpassword').hasError('notEqual')">Password and Confirm Password do not match!
+    <div class='alertmessage' *ngIf="profileForm.get('repeatpassword').hasError('notEqual')">Password and Confirm Password do not match!
     </div>
    </label>
 
   </div>
     </div>
     <hr>
-    <p>Already a user ? <a routerLinkActive="active" routerLink="/signup"> Sign In</a>.</p> 
-  
+    <div class='signup'>
+    <p >Already a user ? <a routerLinkActive="active" routerLink="/signup"> Sign In</a>.</p> 
   <button type="submit" class="registerbtn" [disabled]="!profileForm.valid" >Register</button>
-  </div>
+</div>
+</div>
 </form>
 
 

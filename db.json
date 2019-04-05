@@ -1,237 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "firstname": "john",
-      "lastname": "doe"
-    },
-    {
-      "id": 1,
-      "firstname": "john",
-      "lastname": "doe"
-    },
-    {
-      "id": 3,
-      "firstname": "parushi",
-      "lastname": "sharma"
-    },
-    {
-      "id": 4,
-      "firstname": "p",
-      "lastname": "sharma"
-    },
-    {
-      "id": 5,
-      "firstname": "rishu",
-      "lastname": "verma"
-    },
-    {
-      "firstName": "aaa",
-      "lName": "aaa",
-      "email": "aaaaa",
-      "pno": 5515,
-      "address": "hbshb",
-      "password": "123456",
-      "repeatpassword": "123456",
-      "id": 6
-    },
-    {
-      "fullName": "parushish",
-      "email": "d",
-      "pno": 51,
-      "address": "s",
-      "med": "asdasd",
-      "id": 7
-    },
-    {
-      "firstName": "e",
-      "lName": "e",
-      "email": "ee@g.comu",
-      "pno": 1,
-      "address": "edsw",
-      "password": "rfd",
-      "repeatpassword": "ew",
-      "id": 8
-    },
-    {
-      "firstName": "",
-      "lName": "",
-      "email": "",
-      "pno": "",
-      "address": "",
-      "password": "",
-      "repeatpassword": "",
-      "id": 9
-    },
-    {
-      "firstName": "",
-      "lName": "",
-      "email": "",
-      "pno": "",
-      "address": "",
-      "password": "",
-      "repeatpassword": "",
-      "id": 10
-    },
-    {
-      "firstName": "",
-      "lName": "",
-      "email": "",
-      "pno": "",
-      "address": "",
-      "password": "",
-      "repeatpassword": "",
-      "id": 11
-    },
-    {
-      "firstName": "",
-      "lName": "",
-      "email": "",
-      "pno": "",
-      "address": "",
-      "password": "",
-      "repeatpassword": "",
-      "id": 12
-    },
-    {
-      "firstName": "",
-      "lName": "",
-      "email": "",
-      "pno": "",
-      "address": "",
-      "password": "",
-      "repeatpassword": "",
-      "id": 13
-    },
-    {
-      "firstName": "",
-      "lName": "",
-      "email": "",
-      "pno": "",
-      "address": "",
-      "password": "",
-      "repeatpassword": "",
-      "id": 14
-    },
-    {
-      "firstName": "Rishu ",
-      "lName": "Verma",
-      "email": "rishuverma2897@gmail.com",
-      "pno": 9415582972,
-      "address": "Chandigarh",
-      "password": "1234`",
-      "repeatpassword": "1234",
-      "id": 15
-    },
-    {
-      "firstName": "",
-      "lName": "",
-      "email": "",
-      "pno": "",
-      "address": "",
-      "password": "",
-      "repeatpassword": "",
-      "id": 16
-    },
-    {
-      "firstName": "",
-      "lName": "",
-      "email": "",
-      "pno": "",
-      "address": "",
-      "password": "",
-      "repeatpassword": "",
-      "id": 17
-    },
-    {
-      "firstName": "",
-      "lName": "",
-      "email": "",
-      "pno": "",
-      "address": "",
-      "password": "",
-      "repeatpassword": "",
-      "id": 18
-    },
-    {
-      "firstName": "",
-      "lName": "",
-      "email": "",
-      "pno": "",
-      "address": "",
-      "password": "",
-      "repeatpassword": "",
-      "id": 19
-    },
-    {
-      "firstName": "pratham",
-      "lName": "sharma",
-      "email": "pvs",
-      "pno": 951,
-      "address": "kullu",
-      "password": "123",
-      "repeatpassword": "123",
-      "id": 20
-    },
-    {
-      "firstName": "hello",
-      "lName": "sir",
-      "email": "s",
-      "pno": 1223,
-      "address": "yyuojnn",
-      "password": "",
-      "repeatpassword": "",
-      "med": "kjhgfd",
-      "id": 21,
-      "fullName": "hellosir"
-    },
-    {
-      "firstName": "s",
-      "lName": "s",
-      "email": "abc",
-      "pno": 4,
-      "address": "tybj",
-      "password": "abc",
-      "repeatpassword": "abc",
-      "med": "",
-      "id": 22,
-      "fullName": "sssedrfthj"
-    },
-    {
-      "firstName": "saddvaagd",
-      "lName": "sadfg",
-      "email": "awsdf",
-      "pno": 789542122,
-      "address": "sacdfgn",
-      "password": "sadf",
-      "repeatpassword": "12345",
-      "med": "asdfsdadf",
-      "id": 23
-    },
-    {
-      "firstName": "ayushhh",
-      "lName": "sharma",
-      "email": "as",
-      "pno": 852375,
-      "address": "delhi",
-      "password": "1",
-      "repeatpassword": "1",
-      "med": "",
-      "id": 24,
-      "fullName": "Shhaha"
-    },
-    {
-      "firstName": "Shruti",
-      "lName": "sharma",
-      "email": "as",
-      "pno": 852369,
-      "address": "delhi",
-      "password": "1",
-      "repeatpassword": "1",
-      "med": "dfgnm,",
-      "id": 25
-    },
-    {
       "firstName": "AyushShar",
       "lName": "Cherkhiya",
       "email": "ayush@123",
@@ -240,65 +9,75 @@
       "password": "123456",
       "repeatpassword": "123456",
       "med": "cdggsghg",
-      "id": 26
+      "id": 1
+    },
+    {
+      "firstName": "parushi",
+      "lName": "sharma",
+      "email": "sparushi97@gmail.com",
+      "pno": 987456311,
+      "address": "kullu",
+      "password": "123",
+      "repeatpassword": "123",
+      "med": "ok",
+      "id": 2
     }
   ],
-  "current": [ 
-    { 
-    "date": "2 march 1997.10:00am", 
-    "name": "Parushi", 
-    "address": "kullu", 
-    "status": "completed" 
-    }, 
-    { 
-    "date": "3 april 2018.06:30pm", 
-    "name": "Shruti", 
-    "address": "NewDelhi", 
-    "status": "pending" 
-    }, 
-    { 
-    "date": "4 april 2019.11:30pm", 
-    "name": "Rishu", 
-    "address": "Punjab", 
-    "status": "on the way" 
-    } 
-    ], 
-    "past": [ 
-    { 
-    "date": "14 feb 1997.08:00am", 
-    "name": "Shubhangi", 
-    "address": "chandigarh ", 
-    "status": "completed" 
-    }, 
-    { 
-    "date": "3 april 2017.05:30pm", 
-    "name": "Aayush", 
-    "address": "chandigarh", 
-    "status": "pending" 
-    }, 
-    { 
-    "date": "5 april 2019.05:30pm", 
-    "name": "Samriti", 
-    "address": "chandigarh", 
-    "status": "on the way" 
-    } 
-    ],
-  "faq":  [
+  "current": [
     {
-      "id":1,
-      "title":"What are the ANA Code of Ethics for Nurses?",
+      "date": "2 march 1997.10:00am",
+      "name": "Parushi",
+      "address": "kullu",
+      "status": "completed"
+    },
+    {
+      "date": "3 april 2018.06:30pm",
+      "name": "Shruti",
+      "address": "NewDelhi",
+      "status": "pending"
+    },
+    {
+      "date": "4 april 2019.11:30pm",
+      "name": "Rishu",
+      "address": "Punjab",
+      "status": "on the way"
+    }
+  ],
+  "past": [
+    {
+      "date": "14 feb 1997.08:00am",
+      "name": "Shubhangi",
+      "address": "chandigarh ",
+      "status": "completed"
+    },
+    {
+      "date": "3 april 2017.05:30pm",
+      "name": "Aayush",
+      "address": "chandigarh",
+      "status": "pending"
+    },
+    {
+      "date": "5 april 2019.05:30pm",
+      "name": "Samriti",
+      "address": "chandigarh",
+      "status": "on the way"
+    }
+  ],
+  "faq": [
+    {
+      "id": 1,
+      "title": "What are the ANA Code of Ethics for Nurses?",
       "f1": "The ANA Code of Ethics for Nurses serves the following purposes: It is a succinct statement of the ethical obligations and duties of every individual who enters the nursing profession. It is the profession's nonnegotiable ethical standard. It is an expression of nursing's own understanding of its commitment to society"
     },
     {
-      "id":2,
-      "title":"What does a typical day as a nurse involve?",
+      "id": 2,
+      "title": "What does a typical day as a nurse involve?",
       "f1": "According to the Bureau of Labor Statistics, a nurse is often responsible for assisting physicians in administering patient care, providing advice and educating patients on a variety of medical conditions, and giving advice to the patient as well as their family."
     },
     {
-      "id":3,
-      "title":"What does a type of patient nurse handels?",
+      "id": 3,
+      "title": "What does a type of patient nurse handels?",
       "f1": "A Nurse Practitioner (NP) is an Advanced Practice Registered Nurse who has additional responsibilities for administering patient care than RNs. NPs can prescribe medication, examine patients, diagnose illnesses, and provide treatment, much like physicians do."
     }
   ]
-  
 }

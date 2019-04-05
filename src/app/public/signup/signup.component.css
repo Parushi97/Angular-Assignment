@@ -12,10 +12,9 @@ body {
   .container {
     position: absolute; 
   left:30%; 
-  top:100px;
+  top:55px;
   width: 500px;
-   height:600px; 
-
+  height:550px; 
   border: 2px grey;
   padding: 10px;
   box-shadow: 5px 10px 10px 10px #888888;
@@ -27,12 +26,14 @@ body {
   
   /* Full-width input fields */
   input[type=text], input[type=password],input[type=number] {
-    width:40%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
+    height:15%;
+    width: 300px;
+    padding:10px;
+    margin:10px;
     display: inline-block;
-    border: none;
-    background: #f1f1f1;
+    border: solid 	gainsboro;
+    border-width: 1px;
+    
   }
   
   input[type=text]:focus, input[type=password]:focus {

@@ -1,16 +1,19 @@
 ul{ 
   border: 1px solid rgb(128, 128, 128); 
-  border-radius: 3px; 
+   
   padding: 7px; 
   margin-bottom: 30px; 
-  width: 70%; 
+  width: 80%; 
+  margin-top:5.3%;
   margin-left: 7.3%; 
-   float: left; 
+   float: left;
+   background-color:white; 
+   
   
   } 
   #s{ 
   float: right; 
-  color: red ; 
+  color: blue ; 
    font-style: bold;  
   font-weight: 20px; 
   } 
@@ -31,12 +34,14 @@ ul{
     right:350px; 
     top:200px;
     width: 600px;
-    height:500px; 
+    height:600px; 
 
   border: 2px grey;
   padding: 10px;
   box-shadow: 5px 10px 10px 10px #888888;
   }
   .btn success{
-    color:green;
+    color:red;
   }
+  
+  
