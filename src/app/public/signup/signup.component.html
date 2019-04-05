@@ -10,6 +10,7 @@
     <h1>Sign In</h1>
     <hr>
     <div>
+      <!-- display the email field -->
     <label for="email"><b>Email</b></label><br>
     <input type="text" formControlName="email" placeholder="Enter Email" name="email">
     <div class="alert" *ngIf="!profileForm1.controls['email'].valid && profileForm1.controls['email'].touched">{{alert}}</div>
@@ -17,6 +18,7 @@
 		</div>
     
     <div>  
+      <!-- display the password field -->
     <label for="psw"><b>Password</b></label><br>
     <input type="password" formControlName="password" placeholder="Enter Password" name="password">
     <div class="alert" *ngIf="!profileForm1.controls['password'].valid && profileForm1.controls['password'].touched">{{alert}}</div>

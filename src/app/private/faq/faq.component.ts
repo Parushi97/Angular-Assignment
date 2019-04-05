@@ -16,7 +16,7 @@ export class FaqComponent implements OnInit {
   detail:any;
 
   constructor(private getserv:GetService) { }
-
+  //to show detail of questions
   ngOnInit() {
     this.cflag=true;
     this.getserv.link1().subscribe(res => {
@@ -25,7 +25,7 @@ export class FaqComponent implements OnInit {
       console.log(res);
     });
   }
- 
+ //to show deatils of answer
  linkB() {
     
   this.getserv.link1().subscribe(response => {

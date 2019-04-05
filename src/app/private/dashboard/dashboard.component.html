@@ -15,7 +15,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" >{{Name}}</a>
-              <a class="dropdown-item" (click)=mybookings()><i class="fa fa-edit"></i>  My Bookings </a>
+              <a class="dropdown-item" (click)=mybookings()><i class="fa fa-edit"></i>  My Bookings {{total}}</a>
               <a class="dropdown-item" (click)=faq()><i class="fa fa-envelope"> FAQs</i> </a>
               <a class="dropdown-item" (click)=logout()><i class="fa fa-car">  Log Out</i></a>
               <div class="dropdown-divider"></div>
@@ -25,5 +25,6 @@
         </li>
       </ul>
     </nav>
+    <!-- To display dynamically the headings -->
     <h3><p class="dynamicHeader"  color="green">{{header}} </p></h3>
   <router-outlet></router-outlet>

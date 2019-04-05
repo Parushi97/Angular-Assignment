@@ -11,6 +11,7 @@ export class AuthGuardService implements CanActivate{
   constructor(
     private myRoute: Router){
   }
+  //to run the can activate auth guard
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {

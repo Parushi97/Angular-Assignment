@@ -7,13 +7,17 @@ import { HttpClient } from '@angular/common/http';
 export class GetService {
 
     constructor(private http:HttpClient) { }
-  showcurrent () {
+  //This is for current booking
+    showcurrent () {
     return this.http.get('http://localhost:3000/current')
   }
+  //This is to show past booking
   showp () {
     return this.http.get('http://localhost:3000/past')
   }
+  //This is to show faqs
   link1 () {
     return this.http.get('http://localhost:3000/faq');
       }
+  
 }

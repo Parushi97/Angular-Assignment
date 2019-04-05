@@ -4,12 +4,11 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-public',
   templateUrl: './public.navbar.html',
- // styleUrls: ['./public.component.css']
+ 
 })
 export class PublicComponent implements OnInit {
   title = 'pro4';
-  // links = ['Register', 'Login'];
-  // activeLink = this.links[0];
+  
   navLinks: any[];
   activeLinkIndex = -1; 
   constructor(private router: Router) {

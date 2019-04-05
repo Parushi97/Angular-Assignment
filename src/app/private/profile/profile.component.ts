@@ -38,6 +38,7 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
   }
+  // when submit is clicked
   onsubmit = function(user)
     {
       this.new_user.firstName = this.profileForm3.get('firstName').value;
@@ -52,7 +53,6 @@ export class ProfileComponent implements OnInit {
       this.new_user.id = JSON.parse(localStorage.getItem('user'))[0].id;
        this.update.register(JSON.parse(localStorage.getItem('user'))[0].id,user)
       .subscribe(( response=> {
-        //localStorage.setItem("user",JSON.stringify(this.new_user));
         console.log(response)}));
         this.update.showls(this.profileForm3.value).subscribe(response => {
           let temp = [this.profileForm3.value]

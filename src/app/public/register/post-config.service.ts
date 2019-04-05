@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-
+//to post the data
 export class PostConfigService{
   constructor(private http:HttpClient){
 

@@ -4,8 +4,9 @@
 }
 h2{
   margin: 0px;
-  text-align: center;
+  text-align: left;
   color: green;
+  
 }
 
 body {
@@ -17,9 +18,9 @@ body {
 .container {
   position: absolute; 
   left:30%; 
-  top:55px;
+  top:150px;
   width: 450px;
-  height:550px; 
+  height:450px; 
   border: 2px grey;
   padding: 10px;
   box-shadow: 5px 10px 10px 10px #888888;

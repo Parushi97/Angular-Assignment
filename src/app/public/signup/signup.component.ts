@@ -19,18 +19,21 @@ export class SignupComponent implements OnInit {
   getdata;
   
   
-
+  
   constructor(private fb: FormBuilder,private get:GetServiceService,private routee :Router) {
     this.profileForm1 = fb.group({
-      email: [null, Validators.required],
+      email: [null,Validators.compose([Validators.required,Validators.email])],
+        
       password: [null, Validators.required]
     });
    }
 
   ngOnInit() {
     
-  }
   
+  }
+  //to check the credentails from local storage
+
   saveas(): void {
     var user;
     this.get.save(this.profileForm1.value).subscribe(res => {

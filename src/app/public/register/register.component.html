@@ -1,28 +1,30 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
+<h2 >Register</h2>
+    <hr>
 <form [formGroup]="profileForm" (ngSubmit)="onsubmit(profileForm.value)" >
   <div class="container">
-    <h2 >Register</h2>
-    <hr>
+    
     <div class="flex-container">
     <div class= "colm-1">
-		
+		<!-- display the firstname field -->
 		<label for="fname"><b>First Name</b>
 		<input type="text" formControlName="firstName" value="firstName">
 		<div class="alertmessage" *ngIf="!profileForm.controls['firstName'].valid && profileForm.controls['firstName'].touched">{{alert}}</div>
     </label>
-    
+    <!-- display the last name field -->
     <br>
     <label for="lname"><b>Last name</b>	
     <input type="text" formControlName="lName"  name="lname" >
 		<div class="alertmessage" *ngIf="!profileForm.controls['lName'].valid && profileForm.controls['lName'].touched">{{alert}}</div>
   </label>
-		<br>
+    <br>
+    <!-- display the email field -->
 		<label for="email"><b>Email</b>
 		<input type="text" formControlName="email" placeholder="Enter Email" name="email">
-		<div class="alertmessage" *ngIf="!profileForm.controls['email'].valid && profileForm.controls['email'].touched">{{alert}}</div>
+		<div class="alertmessage" *ngIf="!profileForm.controls['email'].valid && profileForm.controls['email'].touched">incorrect email</div>
   </label>
     <br>
+    <!-- display the password field -->
     <label for="psw"><b>Password</b>
     <input type="password" formControlName="password" placeholder="Enter Password" name="password">
 		<div class="alertmessage" *ngIf="!profileForm.controls['password'].valid && profileForm.controls['password'].touched">{{alert}}</div>
@@ -30,22 +32,26 @@
 		</div>
     
  	 <div class="colm-2">
+      <!-- display the address field -->
     <label for="address"><b>Address</b>
     <input type="text" formControlName="address" name="address" >
     <div class="alertmessage" *ngIf="!profileForm.controls['address'].valid && profileForm.controls['address'].touched">{{alert}}</div>
   </label>
-		<br>
+    <br>
+    <!-- display the contact field -->
     <label for="pno"><b>Contact</b>
-    <input type="number" formControlName="pno" name="pno" min="10" >
+    <input type="number" formControlName="pno" name="pno">
     <div class="alertmessage" *ngIf="!profileForm.controls['pno'].valid && profileForm.controls['pno'].touched">{{alert}}</div>
   </label>
     <br>
+    <!-- display the medical field -->
     <label for="med"><b>Medical-History</b>
     <input type="text" formControlName="med" name="med" >
   </label>
 		<br>
     <label for="psw-repeat"><b>Repeat Password</b>
-    <input type="password" formControlName="repeatpassword" placeholder="Repeat Password" name="repeatpassword" appConfirmPasswordValidator='password' required >
+    <!-- display the password check  field -->
+      <input type="password" formControlName="repeatpassword" placeholder="Repeat Password" name="repeatpassword" appConfirmPasswordValidator='password' required >
     <div class='alertmessage' *ngIf="profileForm.get('repeatpassword').hasError('notEqual')">Password and Confirm Password do not match!
     </div>
    </label>

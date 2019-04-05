@@ -1,28 +1,29 @@
 <h1>PROFILE</h1>
 <div class="container">
-<!-- <img src="/home/parushi/Documents/pro4/avatar.png" alt="Avatar" style="width:200px">
-     -->
-     
+  <!-- to create form    -->
 <form [formGroup]="profileForm3" (ngSubmit)="onsubmit(profileForm3.value)">
   
     <div style="padding-left:40%"><img src="http://www.clker.com/cliparts/b/1/f/a/1195445301811339265dagobert83_female_user_icon.svg.med.png" height="100px"></div>
    <div class="flex-container">
    <div class= "colm-1">
+     <!-- display the fname field -->
     <label for="fname"><b>FullName</b></label><br>
     <input type="text" formControlName="fName" required>
       <br>
-    
+    <!-- display the email field -->
     <label for="email"><b>Email</b></label><br>
     <input type="text" formControlName="email" placeholder="Enter Email" name="email" required>
     <br>
-    
+    <!-- display the contact field -->
     <label for="pno"><b>Contact</b></label><br>
-    <input type="number" formControlName="pno" name="pno" min="10"required>
+    <input type="number" formControlName="pno" name="pno" min="10" max="10"required>
     </div>
+    <!-- display the address field -->
     <div class="colm-2">
     <label for="address"><b>Address</b></label><br>
     <input type="text" formControlName="address" name="address" required>
     <br>
+    <!-- display the medical history field -->
     <label for="med"><b>Medical-History</b></label><br>
 		<input type="text" formControlName="med" name="med" required>
 		<br>

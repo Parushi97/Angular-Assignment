@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class GetServiceService {
-
+//to get records 
   constructor(private http:HttpClient) { }
   save (parm): Observable<any> {
     return this.http.get('http://localhost:3000/users',{params:parm});

@@ -13,6 +13,7 @@ multi :true
 }) 
 export class ConfirmPasswordDirective implements Validator 
 { 
+    //to check password 
 @Input() appConfirmPasswordValidator: string; 
 validate( control : AbstractControl) : {[key:string]:any} | null 
 { 

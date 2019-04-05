@@ -22,15 +22,15 @@ export class RegisterComponent implements OnInit {
 
 
   
-
+//to intiallize the form fields
   constructor(private fb: FormBuilder, 
     private route :Router,
     private postUser:PostConfigService) { 
       this.profileForm = fb.group({
         firstName: [null, Validators.required],
         lName: [null,Validators.required],
-        email: [null,Validators.required],
-        pno : [null,Validators.required],
+        email: [null,Validators.compose([Validators.required,Validators.email])],
+        pno : [null,Validators.compose([Validators.required,Validators.minLength(10),Validators.maxLength(10)])],
         address: [null,Validators.required],
         password: [null,Validators.required],
         repeatpassword: [null,Validators.required],
@@ -42,7 +42,7 @@ export class RegisterComponent implements OnInit {
    ngOnInit(){}
 
    onsubmit = function(user)
-
+    //to navigate to signup
     {
     this.postUser.register(user)
       .subscribe(
